@@ -42,8 +42,7 @@ body {
         font-size: 1.2rem;
         display: flex;
         justify-content: center;
-        border-bottom: 1px black;
-    
+        text-decoration: underline;
     }
 
     .inputSalary{
@@ -191,6 +190,19 @@ body {
             
             }
         
+            .inputSalary1{
+                border-radius: 5px 5px 0px 0px;
+
+            }
+
+            .inputSalary5{
+                border-radius: 0px 0px 5px 5px;
+
+            }
+
+
+
+
             .inputSalary{
                 width: 25rem;
                 height: 25px;
