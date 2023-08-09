@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculatorSalaryTitleContainer">
+        <h1 class="calculatorSalaryTitle">Calculadora de Sueldos</h1>
+    </div>
+        
+    <div class="containerCalculatorSalary">
+        <p class="calculatorSalaryTxt">Ingresa los 5 sueldos:</p>
+
+        <input class="inputSalary" type="number" id="sueldo1" placeholder="1er sueldo">
+        <input class="inputSalary" type="number" id="sueldo2" placeholder="2do sueldo">
+        <input class="inputSalary" type="number" id="sueldo3" placeholder="3er sueldo">
+        <input class="inputSalary" type="number" id="sueldo4" placeholder="4to sueldo">
+        <input class="inputSalary" type="number" id="sueldo5" placeholder="5to sueldo">
+
+        <div class="calcularDescuentosContainerBtn">
+            <button class="calcularDescuentosBtn" onclick="calcularDescuentos()">Calcular Descuentos</button>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="containerTableSalary">
+
+        <table class="tableSalary">
+            <thead>
+                <tr>
+                    <th>Sueldo</th>
+                    <th>AFP (1.2%)</th>
+                    <th>SS (2%)</th>
+                    <th>I/R (5%)</th>
+                </tr>
+            </thead>
+            
+            <tbody id="resultadoTabla">
+                
+                <!-- Aqui sale el contenido de la tabla final -->
+                
+            </tbody>
+        </table>
+    </div>
+        
+    <p class="calculatorResultadoTxt">Promedio de sueldos: <span id="promedioSueldos"> </span></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
